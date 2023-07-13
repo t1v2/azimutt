@@ -123,14 +123,14 @@ type alias Feature a =
 features : Features
 features =
     -- MUST stay in sync with backend/config/config.exs (`free_plan_layouts`)
-    { layouts = { name = "layouts", free = 3 }
-    , memos = { name = "memos", free = 5 }
-    , groups = { name = "groups", free = 1 }
-    , tableColor = { name = "table_color", free = False }
+    { layouts = { name = "layouts", free = 1000 }
+    , memos = { name = "memos", free = 10000 }
+    , groups = { name = "groups", free = 10 }
+    , tableColor = { name = "table_color", free = True }
     , privateLinks = { name = "private_links", free = True }
-    , sqlExport = { name = "sql_export", free = False }
-    , dbAnalysis = { name = "analysis", free = False }
-    , dbAccess = { name = "data_access", free = False }
+    , sqlExport = { name = "sql_export", free = True }
+    , dbAnalysis = { name = "analysis", free = True }
+    , dbAccess = { name = "data_access", free = True }
     }
 
 
